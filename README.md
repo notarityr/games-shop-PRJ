@@ -1,5 +1,11 @@
 # games-shop-PRJ
-Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável. Em sua maioria o código foi documentado para explicar as etapas de forma mais didática. O resultado da página pode ser visto clicando aqui: 
+Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável. 
+<br>
+<br>
+O código foi comentado em sua maior parte para explicar as etapas de forma mais didática. 
+<br>
+<br>
+O resultado da página pode ser visto clicando aqui: https://notarityr.github.io/games-shop-PRJ/
 
 ## Índice
 
