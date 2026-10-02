@@ -1,5 +1,33 @@
 # games-shop-PRJ
-Projeto de web page de uma loja de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável.
+Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável.
+
+## Índice
+
+<details>
+  <summary>Clique para expandir</summary>
+
+- [1 - Header (cabeçalho)](#1---header-cabeçalho)
+  - [Objetivos](#objetivos)
+  - [Etapas](#etapas)
+    - [Criação do header (HTML)](#criação-do-header-html)
+    - [Estilização do header (CSS)](#estilização-do-header-css)
+
+- [2 - About (sobre)](#2---about-sobre)
+  - [Objetivos](#objetivos-1)
+  - [Etapas](#etapas-1)
+    - [Criação do about e importação de fontes (HTML)](#criação-do-about-e-importação-de-fontes-html)
+    - [Estilização do about (CSS)](#estilização-do-about-css)
+
+- [3 - Formulário e Footer (rodapé)](#3---formulário-e-footer-rodapé)
+  - [Objetivos](#objetivos-2)
+  - [Etapas](#etapas-2)
+    - [Criação do Formulário de Contato (HTML)](#criação-do-formulário-de-contato-html)
+    - [Estilização do Formulário (CSS)](#estilização-do-formulário-css)
+    - [Criação e estilização do footer (HTML/CSS)](#criação-e-estilização-do-footer-htmlcss)
+    - [Demais alterações (HTML)](#demais-alterações-html)
+
+</details>
+
 
 ## 1 - Header (cabeçalho)
 ### Objetivos:
@@ -64,7 +92,9 @@ Projeto de web page de uma loja de jogos utilizando HTML e CSS, com o objetivo d
 
 </html>
 ```
+
 #### Estilização do header (CSS):
+
 ```CSS
 /*removendo estilos padrão*/
 
@@ -135,7 +165,6 @@ header .container {
 }
 ```
 
-
 ## 2 - About (sobre)
 ### Objetivos:
 - Compreender a importância de criar seções bem estruturadas em uma página da web e como usar as tags semânticas HTML para definir a estrutura do conteúdo;
@@ -205,6 +234,7 @@ header .container {
 
 <!--fim do código adicionado ao <body>-->
 ```
+
 #### Estilização do about (CSS):
 
 ```CSS
@@ -326,3 +356,208 @@ section h2 {
 
 /*fim das adições/modificações do CSS*/
 ```
+
+## 3 - Formulário e Footer (rodapé)
+### Objetivos:
+- criar uma seção de contato interativa em uma página da web;
+- aplicar estilos de design à seção de contato usando CSS, incluindo a formatação de campos de entrada, botões e textos;
+- criar um formulário de contato funcional, incluindo campos de entrada para nome, e-mail, telefone e mensagem.
+
+### Etapas:
+#### Criação do Formulário de Contato (HTML):
+
+```HTML
+<!--código abaixo adicionado ao <body>-->
+
+<!--criação da seção do formulário de contato-->
+
+<section id="contact">
+    <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-methods">
+            <div>
+                <h3>Fale conosco</h3>
+                <form><!--criação do formulário de contato-->
+                    <input type="text" placeholder="Seu nome" required />
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <input type="tel" placeholder="Seu telefone" />
+                    <textarea placeholder="Sua mensagem" required></textarea><!--caixa de mensagem-->
+                    <button type="submit">Enviar</button><!--botão de envio de formulário-->
+                </form>
+            </div>
+
+            <!--criação dos links das páginas sociais-->
+
+            <div>
+                <h3>Nos acompanhe</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" title="Siga-nos no Instagram">
+                            <img src="./images/instagram.png" alt="Logo do Instagram" />
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="#" title="Siga-nos no Facebook">
+                            <img src="./images/facebook.png" alt="Logo do Facebook" />
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="#" title="Visite nosso canal no Youtube">
+                            <img src="./images/youtube.png " alt="Logo do Youtube" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--seção de endereço físico-->
+            
+            <div>
+                <h3>Venha até nós</h3>
+                <p>
+                    Rua JavaScript nº 124, Vila HTML - Passo Fundo, RS
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--fim do código adicionado ao <body>-->
+```
+#### Estilização do Formulário (CSS):
+
+```CSS
+/*início das adições/modificações do CSS*/
+
+/*ajustando tamanho das imagens dos links das redes sociais*/
+.social-links img {
+    height: 24px;
+}
+
+/*ajustando lista das redes sociais aplicando margem e disposição lado-a-lado*/
+.social-links li {
+    display: inline;
+    margin: 8px;
+}
+
+/*removendo underline padrão da tag <a>*/
+.social-links li a {
+    text-decoration: none;
+}
+
+/*display block para o formulário ocupar toda a largura*/
+#contact .container {
+    display: block;
+}
+
+/*aplicação de display flexível e espaçamento dos métodos de contato*/
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*definindo as características básicas do formulário*/
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*removendo o resize padrão da caixa "Sua mensagem" do formulário*/
+form textarea {
+    resize: none;
+    height: 150px; /*aumentando altura da caixa de texto*/
+}
+
+/*aplicando fonte Bungee e removendo bold da seção h3*/
+section h3 {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    margin-bottom:  16px;
+}
+
+/*ajustando cor de fundo do botão "Enviar" do formulário*/
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer /*aplicando mudança de cursor ao passar por cima do botão*/
+}
+
+/*aplicando efeito de mudança de cor ao passar o mouse no botão "Enviar"*/
+form button:hover {
+ background-color: #3458ba;
+
+}
+
+/*utilizando a fonte Lato no input e textarea*/
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+/*alteração da cor da borda no input e textarea utilizando a propriedade focus*/
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+/*fim das adições/modificações do CSS*/
+```
+#### Criação e estilização do footer (HTML/CSS):
+
+```HTML
+<!--código abaixo adicionado ao <body>-->
+
+<footer>
+    <div class="container">
+        <p>
+            &copy; Games Shop - Todos os direitos reservados - 2026
+        </p>
+    </div>
+</footer>
+
+<!--fim do código adicionado ao <body>-->
+```
+```CSS
+
+/*início das adições/modificações do CSS*/
+
+footer { 
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+/*fim das adições/modificações do CSS*/
+```
+
+#### Demais alterações (HTML):
+
+```HTML
+<!--código abaixo alterado no <body>-->
+
+<!--criação das âncoras para as seções-->
+
+<li><!--item da lista-->
+                    <a href="#about">Sobre a loja</a>
+                </li>
+                <li><!--item da lista-->
+                    <a href="#contact">Contato</a>
+                </li>
+
+<!--adição de texto nos parágrafos-->
+
+<h2>Sobre a loja</h2>
+                <p>
+                    A Games Shop é o destino perfeito para quem busca mergulhar no universo dos videogames com qualidade e variedade. Nossa loja reúne o melhor do mundo Nintendo, PlayStation e Xbox, oferecendo desde consoles de última geração até uma seleção completa de jogos e acessórios. Aqui, cada gamer encontra aquilo que precisa para transformar sua experiência em algo único, seja explorando os clássicos da Nintendo, aproveitando os exclusivos da PlayStation ou vivenciando a potência dos títulos da Xbox. Trabalhamos para que cada visita seja uma jornada divertida, com atendimento especializado e produtos que atendem tanto iniciantes quanto jogadores experientes.
+                </p>
+                <p>
+                    Além de oferecer os lançamentos mais aguardados, a Games Shop também valoriza a nostalgia e a diversidade, trazendo opções para quem gosta de revisitar franquias icônicas ou descobrir novos mundos. Nosso compromisso é proporcionar uma experiência completa: desde a compra segura e prática até o suporte pós-venda, garantindo que cada cliente tenha tranquilidade e satisfação. Seja para montar sua coleção, presentear alguém especial ou simplesmente se atualizar com as novidades do mercado gamer, a Games Shop é o lugar certo para quem respira jogos e quer estar sempre conectado às melhores plataformas.
+                </p>
+
+<!--fim das alterações no <body>-->
+```
+
+
