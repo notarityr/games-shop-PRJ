@@ -1,10 +1,7 @@
 # games-shop-PRJ
-Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável.
+Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o objetivo de aplicar conceitos de design responsivo, incluindo a utilização de Flexbox para criar um layout flexível e adaptável. Em sua maioria o código foi documentado para explicar as etapas de forma mais didática. O resultado da página pode ser visto clicando aqui: 
 
 ## Índice
-
-<details>
-  <summary>Clique para expandir</summary>
 
 - [1 - Header (cabeçalho)](#1---header-cabeçalho)
   - [Objetivos](#objetivos)
@@ -25,8 +22,6 @@ Projeto de web page de uma loja de venda de jogos utilizando HTML e CSS, com o o
     - [Estilização do Formulário (CSS)](#estilização-do-formulário-css)
     - [Criação e estilização do footer (HTML/CSS)](#criação-e-estilização-do-footer-htmlcss)
     - [Demais alterações (HTML)](#demais-alterações-html)
-
-</details>
 
 
 ## 1 - Header (cabeçalho)
@@ -540,10 +535,10 @@ footer {
 
 <!--criação das âncoras para as seções-->
 
-<li><!--item da lista-->
+                <li>
                     <a href="#about">Sobre a loja</a>
                 </li>
-                <li><!--item da lista-->
+                <li>
                     <a href="#contact">Contato</a>
                 </li>
 
