@@ -1,0 +1,103 @@
+<!--`html:5` para criar a estrutura básica do projeto-->
+<!DOCTYPE html> 
+<html lang="pt-br"><!--alteração da linguagem para "pt-br"--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Shop - A sua loja de games</title><!--alteração do título da aba da página-->
+    <link rel="stylesheet" href="./main.css"/>
+    
+    <!--importando as fontes Bungee e Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container"><!--`.container` para controle geral do header/cabeçalho-->
+            <h1>Games Shop</h1>
+        <nav><!--elemento semântico informando que o conteúdo são links de navegação-->
+            <ul><!--lista não ordenada-->
+                <li><!--item da lista-->
+                    <a href="#about">Sobre a loja</a>
+                </li>
+                <li><!--item da lista-->
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        </div> 
+    </header>
+    <section id="about"><!--criação da seção about/sobre-->
+        <div class="container">
+            <img class="store-front" src="./Images/loja.jpg" alt="Fachada da loja Games Shop" />
+            <div> 
+                <h2>Sobre a loja</h2><!--criação do about/sobre-->
+                <p>
+                    A Games Shop é o destino perfeito para quem busca mergulhar no universo dos videogames com qualidade e variedade. Nossa loja reúne o melhor do mundo Nintendo, PlayStation e Xbox, oferecendo desde consoles de última geração até uma seleção completa de jogos e acessórios. Aqui, cada gamer encontra aquilo que precisa para transformar sua experiência em algo único, seja explorando os clássicos da Nintendo, aproveitando os exclusivos da PlayStation ou vivenciando a potência dos títulos da Xbox. Trabalhamos para que cada visita seja uma jornada divertida, com atendimento especializado e produtos que atendem tanto iniciantes quanto jogadores experientes.
+                </p>
+                <p>
+                    Além de oferecer os lançamentos mais aguardados, a Games Shop também valoriza a nostalgia e a diversidade, trazendo opções para quem gosta de revisitar franquias icônicas ou descobrir novos mundos. Nosso compromisso é proporcionar uma experiência completa: desde a compra segura e prática até o suporte pós-venda, garantindo que cada cliente tenha tranquilidade e satisfação. Seja para montar sua coleção, presentear alguém especial ou simplesmente se atualizar com as novidades do mercado gamer, a Games Shop é o lugar certo para quem respira jogos e quer estar sempre conectado às melhores plataformas.
+                </p>
+                <ul class="brands-list"><!--criação da lista de logotipos das marcas-->
+                    <li><img src="./Images/nintendo.png" alt="Logo Nintendo" /></li>
+                    <li><img src="./Images/playstation.png" alt="Logo Playstation" /></li>
+                    <li><img src="./Images/xbox.png" alt="Logo Xbox" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<section id="contact"><!--criação da seção do formulário de contato-->
+    <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-methods">
+            <div>
+                <h3>Fale conosco</h3>
+                <form><!--criação do formulário de contato-->
+                    <input type="text" placeholder="Seu nome" required />
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <input type="tel" placeholder="Seu telefone" />
+                    <textarea placeholder="Sua mensagem" required></textarea><!--caixa de mensagem-->
+                    <button type="submit">Enviar</button><!--botão de envio de formulário-->
+                </form>
+            </div>
+            <div>
+                <h3>Nos acompanhe</h3><!--criação dos links das páginas sociais-->
+                <ul class="social-links">
+                    <li>
+                        <a href="#" title="Siga-nos no Instagram">
+                            <img src="./images/instagram.png" alt="Logo do Instagram" />
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="#" title="Siga-nos no Facebook">
+                            <img src="./images/facebook.png" alt="Logo do Facebook" />
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="#" title="Visite nosso canal no Youtube">
+                            <img src="./images/youtube.png " alt="Logo do Youtube" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div><!--seção de endereço físico-->
+                <h3>Venha até nós</h3>
+                <p>
+                    Rua JavaScript nº 124, Vila HTML - Passo Fundo, RS
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>
+            &copy; Games Shop - Todos os direitos reservados - 2026
+        </p>
+    </div>
+</footer>
+</body>
+</html>
+
